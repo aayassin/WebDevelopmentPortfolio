@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="../Styles/ticStyles.css">
+
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td class="cell" id ="0"></td>
+            <td class="cell" id ="1"></td>
+            <td class="cell" id ="2"></td>
+        </tr>
+        <tr>
+            <td class="cell" id ="3"></td>
+            <td class="cell" id ="4"></td>
+            <td class="cell" id ="5"></td>
+        </tr>
+        <tr>
+            <td class="cell" id ="6"></td>
+            <td class="cell" id ="7"></td>
+            <td class="cell" id ="8"></td>
+        </tr>
+    </table>
+
+    <div class="gameover">
+        <div class="text"></div>
+        <button onClick="gameMode()">Play Again?</button>
+    </div>
+
+    <button onClick="gameMode()">Start/Restart</button>
+
+    <div id="clock"></div>
+
+    <p>
+        <label>Game Mode</label>            
+        <input type = "radio"
+               name = "choice"
+               id = "playerVComp"
+               value = "playerVComp" />
+        <label for = "playerVComp">Player v Computer</label>
+        <input type = "radio"
+               name = "choice"
+               id = "playerVplayer"
+               value = "playerVplayer" />
+        <label for = "playerVplayer">Player v Player</label>
+    </p>
+
+    <div class = "home">
+
+        <a class="home-btn" href="../HomePage/homePage.html">Home Page</a>
+
+    </div>
+
+    <h1 id="turn">It is X's turn</h1>
+    <h1 id = "timer"></h1>
+
+    <script src="../Scripts/script.js"></script>
+</body>
+
+</html>
